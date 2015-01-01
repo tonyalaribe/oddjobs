@@ -13,6 +13,32 @@
  */
 @import '../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss';
 
+
+$img-ppic:30px;
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.valign-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+.valign {
+  @extend %vertical-align;
+  text-align:center;
+}
+
+
+
+
 html,
 body {
   width: 100%;
@@ -21,30 +47,188 @@ body {
   padding: 0;
 }
 
+.foot{
+  width:100%;
+  min-height:15%;
+  background-color:#51574a;
+  text-align:center;
+  padding:50px;
+  color:#fff;
+  
+  span{
+    color:#fff;
+  }
+  
+  .btn{
+    color:#fff;
+      
+  }
+  
+
+}
+
+.facebook{
+          @include button-variant(#fff, #3b5998, #3b5998);
+          color:#fff;
+          
+        }
+        .google-plus{
+          @include button-variant(#fff, #dd4b39, #dd4b39);
+          color:#fff;
+          
+           
+        }
+        .twitter{
+          @include button-variant(#fff, #4099FF, #4099FF);
+          color:#fff;
+        }
+
+
 .root{
   header{
     height:100%;
     width:100%;
+    background-color:#2B2943;
     background-image:url(../images/electrician.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
+  nav{
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    
+    ul{
+      position:relative;
+      display:inline-block;
+      float:right;
+      .active{
+        border-top:2px solid #fff;
+      }
+      li{
+        display:inline-block;
+        list-style:none;
+      
+        a{
+          padding:20px;
+          color:#fff;
+          text-decoration:none;
+          
+          img{
+            @include square(40px);
+          }
+          &:hover, a:active, a:focus{
+          border-top:2px solid #fff;
+          }
+        }
+      }
+    }
   }
+    
+  }
+  
+  
+  
   
   main{
     min-height:100%;
     background-color:#fff;
     
+    
   }
   .ghost-btn{
-    background-color:rgba(111, 111, 111, 0.5);
-    border: 1px solid #888;
+    background-color:rgba(0, 0, 0, 0.4);
+    color:#fff;
+    border: 1px solid #555;
+    width:90%;
+    
   }
+  
+  .ghost-btn-group{
+    background-color:rgba(0, 0, 0, 0.4);
+    color:#fff;
+    border: 1px solid #555;
+    width:90%;
+    display:inline-block;
+    span{
+      width:9%;
+      text-align:center;
+      background-color:transparent;
+      border:0 solid transparent;
+      color:#fff;
+      display:inline;
+    }
+    input{
+      display:inline;
+      width:90%;
+      text-align:center;
+      background-color:transparent;
+      border: 0 solid transparent;
+    }
+  }
+  
   
 }
 
 
+.navigation{
+  display:block;
+  background-color:#05080d;
+  color:#fff;
+  
+  ul{
+    display:inline-block;
+    padding:10px;
+    float:right;
+    
+    li{
+      display:inline-block;
+      list-style:none;
+      a{
+        padding:15px;
+        color:#C3D3EE;
+        text-decoration:none;
+        
+        &:hover, a:active, a:focus{
+          border-top:2px solid #C3D3EE;
+          }
+      }
+      
+      
+      img{
+        width:$img-ppic;
+        height:$img-ppic;
+      }
+    }
+  }
+  
+  
+}
+
+
+.profile{
+  background-color:#D7D8EC;
+  
+  main{
+    &>div{
+      margin:2%;
+    }
+    .last-div{
+      span{
+        padding-right:10px;
+      }
+    }
+  }
+}
+
+
 /** Larger Screens - desktops and tablets **/
-@media all and (min-width: 990px) {
+@media all and (min-width: 480px) {
+ .root{
+   .ghost-btn-group{
+      width:50%;
+    }
+ }
  
 }

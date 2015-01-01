@@ -37,43 +37,75 @@
     
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="root">
-    <header class="valign-parent">
-
-        <div class="valign">
-          
-          <div class="input-group ghost-btn-group" style="text-align:center">
-              <span class="input-group-addon"><i class="fa fa-search"></i></span>
-              <input type="text" class="input input-lg"  placeholder="Search ex. Electricians in Calabar"/>
-          </div>
-          <br/><br/>
-          <button class="btn btn-lg btn-info">Submit</button>
-          
-        </div>
-        
-        <nav>
+  <body class="profile">
+    <header>
+        <nav class="navigation">
           <ul>
             <li ><a class="active"><i class="fa fa-home"></i> Home</a></li>
             <li><a><img class="img-circle img-ppic" src="images/ppic.jpg"/> Anthony Alaribe</a></li>
             <li><a><i class="fa fa-unlock" ></i> logout</a></li>
           </ul>
+          <div style="clear:both"></div>
         </nav>
-        
-        <div style="clear:both"></div>
     </header>
+
+    <main>
     
-    <footer class="foot " >
-    <div style="clear:both"></div>
-      <div class="">
-        <div>
-          <a class="btn btn-lg facebook"> <i class="fa fa-2x fa-facebook"></i></a>
-          <a class="btn btn-lg twitter"> <i class="fa fa-2x fa-twitter"></i></a>
-          <a class="btn btn-lg google-plus"> <i class="fa fa-2x fa-google-plus"></i></a>
-          
-        </div><br/>
-        <div>Copyright Oddjobs.com</div>
+      <div align="center" class="col-sm-2 list-group-item">
+        <img class="" src="images/ppic.jpg"/>
       </div>
-    </footer>
+      <div class="col-sm-9">
+        <div class=" list-group">
+          <div class="list-group-item">
+            <h2>Anthony Alaribe</h2>
+          </div>
+          
+          <div class="list-group-item">
+            Descriptions
+          </div>
+          
+          <div class="list-group-item last-div" >
+            <span><i class="fa fa-envelope"></i> No Email</span>
+            <span><i class="fa fa-phone"></i> Phone Number</span>
+            <span><i class="fa fa-road"></i> No Location</span>
+            
+          </div>
+        </div>
+        
+        <div class=" panel panel-default">
+          <div class="panel-heading">
+          <i class="fa fa-lightbulb-o" ></i><span> Skills</span>
+          <a class="pull-right" href="#" style="text-decoration:none"><i class="fa fa-plus"></i> Add Skill</a>
+            <div style="clear:both"></div>
+          </div>
+          <div class="panel-body">
+            <div class="list-group-item">
+              <div class="list-group-item-heading">Engineeer</div>
+              <div class="list-group-item-text">
+                lorem ipsum dolor ipt et manas lorem ipsum dolor ipt et manas. lorem ipsum dolor ipt et manas. lorem ipsum dolor ipt et manas lorem ipsum dolor ipt et manas<a href="#">...more</a>
+                
+              </div>
+              <br/>
+              <div class="list-group-item-footer">
+                <button class="btn btn-default"><i class="fa fa-comment"></i> "20"</button>
+                <button class="btn btn-default pull-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </button>
+                <div style="clear:both"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    </main>
+
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
