@@ -86,6 +86,7 @@ gulp.task('styles', function () {
     'app/styles/*.scss',
     'app/styles/**/*.css',
     'app/styles/components/components.scss'
+
   ])
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.sass({
