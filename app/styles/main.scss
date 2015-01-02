@@ -66,6 +66,31 @@ body {
   
 
 }
+.nav-search{
+    background-color:rgba(0, 0, 0, 0.2);
+    color:#fff;
+    min-width:50%;
+    border:0;
+    border-bottom: 1px solid #555;
+    min-width:50%;
+    display:inline-block;
+    span{
+      width:9%;
+      text-align:center;
+      background-color:transparent;
+      border:0 solid transparent;
+      color:#fff;
+      display:inline;
+    }
+    input{
+      display:inline;
+      width:90%;
+      text-align:center;
+      background-color:transparent;
+      border: 0 solid transparent;
+    }
+}
+
 
 .facebook{
           @include button-variant(#fff, #3b5998, #3b5998);
@@ -176,6 +201,7 @@ body {
   display:block;
   background-color:#05080d;
   color:#fff;
+  
   
   ul{
     display:inline-block;
